@@ -1,0 +1,10 @@
+kumuluzee:
+  name: app1
+  env:
+    name: dev
+  version: 1.0.0
+  server:
+    base-url: http://localhost:80
+    http:
+      port: 80
+
