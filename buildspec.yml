@@ -3,6 +3,7 @@ phases:
     pre_build:
         commands:
             - echo Login into ECR
+            - echo $AWS_DEFAULT_REGION
             - aws --version
             - $(aws ecr get-login-password --region ap-southeast-1)
             - REPOSITORY_URI=667996126978.dkr.ecr.ap-southeast-1.amazonaws.com/kmdemo-ecs
