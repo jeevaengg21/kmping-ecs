@@ -46,12 +46,7 @@
             <artifactId>javaee-web-api</artifactId>
             <version>8.0</version>
             <type>jar</type>            
-        </dependency>
-        <dependency>
-            <groupId>com.svm</groupId>
-            <artifactId>KMReportModule1</artifactId>
-            <version>1.0</version>
-        </dependency>
+        </dependency>     
         
     </dependencies>
 
