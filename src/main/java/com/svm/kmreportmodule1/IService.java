@@ -5,6 +5,7 @@
  */
 package com.svm.kmreportmodule1;
 
+import java.util.Map;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
@@ -18,5 +19,5 @@ public interface IService {
     @Path("/ping")
     @GET
     @Produces({"application/json"})
-    public String pingPong();
+    public Map pingPong();
 }

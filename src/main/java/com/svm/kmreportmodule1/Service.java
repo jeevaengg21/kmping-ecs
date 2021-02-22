@@ -5,6 +5,8 @@
 package com.svm.kmreportmodule1;
 
 import java.io.Serializable;
+import java.util.HashMap;
+import java.util.Map;
 import javax.ejb.Stateless;
 import javax.ws.rs.Path;
 
@@ -16,8 +18,12 @@ import javax.ws.rs.Path;
 @Path("/service")
 public class Service implements Serializable, IService {
 
-    public String pingPong() {
-        return "{\"status\":\"pong\"}";
+    @Override
+    public Map pingPong() {
+        Map response=new HashMap();
+        response.put("status", "pong");
+        response.put("time", System.currentTimeMillis());
+        return response;
     }
 
 }
